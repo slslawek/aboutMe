@@ -1,0 +1,34 @@
+<div class="container" [ngClass]="theme">
+  <mat-toolbar>
+    <section class="theme-toggler">
+      <mat-slide-toggle [(ngModel)]="checked" (change)="changeTheme()"></mat-slide-toggle>
+    </section>
+    <nav>
+      <ul>
+        <li *ngFor="let item of nav">
+          <a [routerLink]="item.path" (click)="menuClick(item.path)" [ngClass]="item.active ? 'active' : ''" >{{ item.text }}</a>
+        </li>
+      </ul>
+    </nav>
+  </mat-toolbar>
+  <div class="content_container">
+    <div class="content_wrapper">
+      <div class="left">
+        <mat-card class="header">
+          <mat-card-header>
+            <img class="photo" mat-card-image src="{{ header.photo }}" />
+          </mat-card-header>
+          <mat-card-content class="info">
+            <div class="name">{{ header.name }}</div>
+            <div class="address">{{ header.address }}</div>
+            <div class="phone">{{ header.phone }}</div>
+            <div class="email">{{ header.email }}</div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="content right">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
