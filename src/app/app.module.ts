@@ -13,6 +13,7 @@ import { StartComponent } from './start/start.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    SlickCarouselModule,
     MatSlideToggleModule,
     MatToolbarModule,
     MatCardModule
