@@ -29,10 +29,10 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    SlickCarouselModule,
     MatSlideToggleModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
