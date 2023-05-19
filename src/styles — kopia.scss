@@ -1,6 +1,7 @@
 @use '@angular/material' as mat;
 @import "@angular/material/theming";
-@include mat.core();
+@include mat.all-legacy-component-typographies();
+@include mat.legacy-core();
 
 $title-font: Raleway, sans-serif;
 $text-font:Open Sans, sans-serif;

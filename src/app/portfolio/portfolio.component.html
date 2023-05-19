@@ -1,1 +1,54 @@
-<p>portfolio works!</p>
+<h1>{{ portfolio.title }}</h1>
+<div class="portfolio_container">
+<ng-container *ngIf="portfolio.apps">
+  <h2>Aplikacje</h2>
+  <div class="portfolio_item" [ngClass]="sliderClass[i]" *ngFor="let app of portfolio.apps; let i = index">
+    <h3>{{app.title}}</h3>
+    <p class="tech">{{app.tech}}</p>
+    <ngx-slick-carousel class="carousel"
+                    #slickModal="slick-carousel"
+                    [config]="slideConfig"
+                    (init)="slickInit($event)"
+                    (breakpoint)="breakpoint($event)"
+                    (afterChange)="afterChange($event)"
+                    (beforeChange)="beforeChange($event)"
+                    *ngIf="activeFull===null">
+      <div ngxSlickItem *ngFor="let slide of app.images; let j = index" class="slide" (click)="(activeFull===null)?fullScreenOn(i,j):fullScreenOff()">
+        <img src="./assets/img/apps/{{ slide.file }}" alt="" width="100%">
+      </div>
+    </ngx-slick-carousel>
+    <ngx-slick-carousel class="carousel"
+                    #slickModal="slick-carousel"
+                    [config]="slideConfigFull"
+                    (init)="slickInit($event)"
+                    (breakpoint)="breakpoint($event)"
+                    (afterChange)="afterChange($event)"
+                    (beforeChange)="beforeChange($event)"
+                    *ngIf="activeFull!==null">
+      <div ngxSlickItem *ngFor="let slide of app.images; let j = index" class="slide" (click)="(activeFull===null)?fullScreenOn(i,j):fullScreenOff()">
+        <img src="./assets/img/apps/{{ slide.file }}" alt="" width="100%">
+      </div>
+    </ngx-slick-carousel>
+  </div>
+</ng-container>
+<ng-container *ngIf="portfolio.web">
+
+  <div class="portfolio_item">
+    <!--<ngx-slick-carousel class="carousel"
+                        #slickModal="slick-carousel"
+                        [config]="slideConfig"
+                        (init)="slickInit($event)"
+                        (breakpoint)="breakpoint($event)"
+                        (afterChange)="afterChange($event)"
+                        (beforeChange)="beforeChange($event)">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <img src="{{ slide.img }}" alt="" width="100%">
+    </div>
+    </ngx-slick-carousel> -->
+    </div>
+
+</ng-container>
+</div>
+<div>
+  {{ portfolio.web | json}}
+</div>

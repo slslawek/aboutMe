@@ -15,6 +15,7 @@ export class Service {
   private _experience$ = new BehaviorSubject<Types.Experience>({});
   private _skills$ = new BehaviorSubject<Types.Skills>({});
   private _hobby$ = new BehaviorSubject<Types.Hobby>({});
+  private _portfolio$ = new BehaviorSubject<Types.Portfolio>({});
   nav: Types.Menu[] = Nav;
 
   constructor(
@@ -33,12 +34,14 @@ export class Service {
   set setExperience(experience: Types.Experience) { this._experience$.next(experience); }
   set setSkills(skills: Types.Skills) { this._skills$.next(skills); }
   set setHobby(hobby: Types.Hobby) { this._hobby$.next(hobby); }
+  set setPortfolio(portfolio: Types.Portfolio) { this._portfolio$.next(portfolio); }
 
   get getHeader(): Observable<Types.Header> { return this._header$.asObservable(); }
   get getAbout(): Observable<Types.About> { return this._about$.asObservable(); }
   get getExperience(): Observable<Types.Experience> { return this._experience$.asObservable(); }
   get getSkills(): Observable<Types.Skills> { return this._skills$.asObservable(); }
   get getHobby(): Observable<Types.Hobby> { return this._hobby$.asObservable(); }
+  get getPortfolio(): Observable<Types.Portfolio> { return this._portfolio$.asObservable(); }
 
   menuItemHighlight(path: string) {
     this.nav.forEach(function (v) { v.active = false });

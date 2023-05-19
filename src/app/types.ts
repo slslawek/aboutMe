@@ -43,3 +43,22 @@ export type Hobby = {
   title?: string,
   content?:string[]
 }
+
+export type Portfolio = {
+  title?: string,
+  apps?: Apps[],
+  web?: Web[]
+}
+
+export type Apps = {
+  title?: string,
+  images?: { file?: string }[],
+  tech?: string
+}
+
+export type Web = {
+  title?: string,
+  images?: { file?: string }[],
+  tech?: string,
+  url?: string
+}

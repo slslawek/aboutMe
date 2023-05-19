@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
   experience: Types.Experience = {};
   skills: Types.Skills = {};
   hobby: Types.Hobby = {};
-  footer: string = "";
+  portfolio: Types.Portfolio = {};
 
   constructor(
     private Service: Service,
@@ -54,6 +54,7 @@ export class AppComponent implements OnInit {
         this.Service.setExperience = experience;
         this.Service.setSkills = data.skills;
         this.Service.setHobby = data.hobby;
+        this.Service.setPortfolio = data.portfolio;
       })
     )
     .subscribe(

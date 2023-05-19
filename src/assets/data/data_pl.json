@@ -96,5 +96,115 @@
     "title":"Hobby",
     "content":["rower","góry"]
   },
-  "footer":"Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb rekrutacyjnych i marketingowych, zgodnie z ustawą o ochronie danych osobowych z dnia 29.08.1997 Dz. U. Nr 133 poz. 883."
-}
+  "portfolio":{
+    "title":"Portfolio",
+      "apps": [
+        {
+          "title": "Planer/kalkulator mebli - frontend",
+          "images": [
+          { "file":"furniture-frontend/fe-1.png" },
+          { "file":"furniture-frontend/fe-2.png" },
+          { "file":"furniture-frontend/fe-3.png" },
+          { "file":"furniture-frontend/fe-4.png" }
+        ],
+        "tech": "Angular, REST API"
+      },
+      {
+        "title": "Planer/kalkulator mebli - backoffice",
+        "images": [
+          { "file":"furniture-backoffice/fb-1.png" },
+          { "file":"furniture-backoffice/fb-2.png" },
+          { "file":"furniture-backoffice/fb-3.png" },
+          { "file":"furniture-backoffice/fb-4.png" },
+          { "file":"furniture-backoffice/fb-5.png" },
+          { "file":"furniture-backoffice/fb-6.png" },
+          { "file":"furniture-backoffice/fb-7.png" },
+          { "file":"furniture-backoffice/fb-8.png" }
+        ],
+        "tech": "Angular, Kendo UI, REST API"
+      },
+      {
+        "title": "Rejestr wejść - rejestracja i awizacja wizyt",
+        "images": [
+          { "file":"visits-enter/rw-enter-1.jpg" },
+          { "file":"visits-enter/rw-enter-2.jpg" },
+          { "file":"visits-enter/rw-enter-3.png" }
+        ],
+        "tech": "AngularJS, REST API, WebSocket"
+      },
+      {
+        "title": "Rejestr wejść - baza osób uprawnionych do zatwierdzania wizyt",
+        "images": [
+          { "file":"visits-managers/rw-managers-1.png" },
+          { "file":"visits-managers/rw-managers-2.png" }
+        ],
+        "tech": "AngularJS, REST API, WebSocket"
+      },
+      {
+        "title": "Rejestr wejść - zatwierdzanie wizyt awizowanych",
+        "images": [
+          { "file":"visits-approval/rw-approval-1.png" },
+          { "file":"visits-approval/rw-approval-2.png" },
+          { "file":"visits-approval/rw-approval-3.png" },
+          { "file":"visits-approval/rw-approval-4.png" }
+        ],
+        "tech": "AngularJS, REST API, WebSocket"
+      },
+      {
+        "title": "Rejestr wejść - ewidencja wizyt",
+        "images": [
+          { "file":"visits-office/rw-office-1.png" },
+          { "file":"visits-office/rw-office-2.png" },
+          { "file":"visits-office/rw-office-3.png" },
+          { "file":"visits-office/rw-office-4.png" },
+          { "file":"visits-office/rw-office-5.png" },
+          { "file":"visits-office/rw-office-6.png" },
+          { "file":"visits-office/rw-office-7.png" }
+        ],
+        "tech": "AngularJS, REST API, WebSocket"
+      }
+    ],
+    "web": [
+      {
+        "title": "Serwis www - Dwór Kombornia",
+        "images": [
+          { "file":"dk/dk-1.png" }
+        ],
+        "tech": "CMS Joomla, PHP, mySQL",
+        "url": "https://www.dworkombornia.pl"
+      },
+      {
+        "title": "Serwis www - Wódka Dwór Sieraków",
+        "images": [
+          { "file":"wds/wds-1.png" }
+        ],
+        "tech": "CMS Joomla, PHP, mySQL",
+        "url": "https://www.wodkadworsierakow.pl"
+      },
+      {
+        "title": "Serwis www - Eyetom sp. z o.o.",
+        "images": [
+          { "file":"et/et-1.png" }
+        ],
+        "tech": "CMS Joomla, PHP, mySQL",
+        "url": "https://www.eyetom.com"
+      },
+      {
+        "title": "Serwis www - ImageOnline",
+        "images": [
+          { "file":"io/io-1.png" }
+        ],
+        "technolgies": "CMS Joomla, PHP, mySQL",
+        "url": "http://www.imageonline.pl"
+      },
+      {
+        "title": "Serwis www - TAMiTU",
+        "images": [
+          { "file":"io/io-1.png" }
+        ],
+        "technolgies": "CMS Joomla, PHP, mySQL",
+        "url": "https:www.tamitutatry.pl"
+      }
+    ]
+    }
+  }
