@@ -1,0 +1,15 @@
+<div class="gallery-lightbox-container">
+  <div class="lightbox" @animation2>
+      <span class="count">
+          {{currentIndex + 1}}/{{totalImageCount}}
+      </span>
+      <button *ngIf="controls" class="btn-lightbox-carousel btn-prev" (click)="prev()"></button>
+      <div *ngIf="previewImage"
+          [@animation]="{value: 'visible'}"
+          (@animation.done)="onAnimationEnd($event)"
+          class="lightbox-img">
+          <img [src]="'./assets/img/apps/'+currentLightboxImage.file" *ngIf="currentLightboxImage">
+      </div>
+      <button *ngIf="controls" class="btn-lightbox-carousel btn-next" (click)="next()"></button>
+  </div>
+</div>

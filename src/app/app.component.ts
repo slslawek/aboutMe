@@ -65,8 +65,4 @@ export class AppComponent implements OnInit {
       });
   }
 
-  menuClick(path: string ){
-    this.Service.menuItemHighlight(path);
-  }
-
 }

@@ -6,7 +6,7 @@
     <nav>
       <ul>
         <li *ngFor="let item of nav">
-          <a [routerLink]="item.path" (click)="menuClick(item.path)" [ngClass]="item.active ? 'active' : ''" >{{ item.text }}</a>
+          <a [routerLink]="item.path" routerLinkActive="active">{{ item.text }}</a>
         </li>
       </ul>
     </nav>

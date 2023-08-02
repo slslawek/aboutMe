@@ -1,6 +1,6 @@
 export const Nav = [
-  { text: "Start", path: "/start", active: true },
-  { text: "Doświadczenie", path: "/experience", active: false},
-  { text: "Umiejętności", path: "/skills", active: false },
-  { text: "Portfolio", path: "/portfolio", active: false }
+  { text: "Start", path: "/start" },
+  { text: "Doświadczenie", path: "/experience"},
+  { text: "Umiejętności", path: "/skills" },
+  { text: "Portfolio", path: "/portfolio" }
 ];

@@ -1,7 +1,6 @@
 export type Menu = {
   text: string,
-  path: string,
-  active: boolean
+  path: string
 };
 
 export type Header = {
@@ -61,4 +60,14 @@ export type Web = {
   images?: { file?: string }[],
   tech?: string,
   url?: string
+}
+
+export interface Img {file: string };
+
+export interface LightBoxData {
+  showLB: boolean,
+  galleryData: Img[],
+  currentImageIndex: number,
+  sliderClass: string,
+  portfolioClass: string
 }

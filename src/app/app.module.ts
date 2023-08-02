@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,9 @@ import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { LightboxComponent } from './lightbox/lightbox.component';
+import { ElementsComponent } from './portfolio/elements/elements.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +25,9 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     StartComponent,
     ExperienceComponent,
     SkillsComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    LightboxComponent,
+    ElementsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,9 +38,11 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     MatSlideToggleModule,
     MatToolbarModule,
     MatCardModule,
+    MatTabsModule,
     SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

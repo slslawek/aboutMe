@@ -1,0 +1,14 @@
+<ng-container *ngIf="elements">
+<div class="portfolio_item" *ngFor="let element of elements; let i = index">
+  <h3>{{element.title}}</h3>
+  <p class="tech">{{element.tech}}</p>
+  <ngx-slick-carousel class="carousel"
+  #slickModal="slick-carousel"
+  [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slide of element.images; let j = index" class="slide" (click)="fullScreenOn(i,j,'apps')">
+      <img [src]="'./assets/img/apps/'+slide.file" alt="" width="100%">
+    </div>
+  </ngx-slick-carousel>
+</div>
+</ng-container>
+

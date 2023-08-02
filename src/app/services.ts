@@ -43,11 +43,4 @@ export class Service {
   get getHobby(): Observable<Types.Hobby> { return this._hobby$.asObservable(); }
   get getPortfolio(): Observable<Types.Portfolio> { return this._portfolio$.asObservable(); }
 
-  menuItemHighlight(path: string) {
-    this.nav.forEach(function (v) { v.active = false });
-    const menuIndex: number = this.nav.findIndex(((obj: { path: string }) => obj.path === path));
-    if (menuIndex >= 0) {
-      this.nav[menuIndex].active = true;
-    }
-  }
 }
